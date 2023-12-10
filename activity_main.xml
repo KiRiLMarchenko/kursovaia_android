@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/chooseTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:text="Выберите тему викторины"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+<!-- верхняя часть кнопок -->
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/chooseTopic"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="50dp"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:id="@+id/history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="25dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/round_back_white_10">
+
+            <TextView
+                android:id="@+id/textHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вопросы по истории"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:minHeight="60dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="25dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/round_back_white_10">
+
+            <TextView
+                android:id="@+id/textCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вопросы по городам"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:minHeight="60dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    <!--Нижняя часть кнопок -->
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="50dp"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+
+            <LinearLayout
+                android:id="@+id/music"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:padding="25dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/round_back_white_10">
+
+                <TextView
+                    android:id="@+id/textMusic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Вопросы по музыке"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:minHeight="60dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/allQuest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_back_white_10"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/textAllQuest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Все вопросы"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:minHeight="60dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <!--Кнопка начала викторины -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonstart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Начать викторину"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/line2"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/button">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </RelativeLayout>
