@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizResult"
+    android:background="#DAA520">
+
+
+    <TextView
+        android:id="@+id/congratulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="15dp"
+        android:text="Поздравляем. Ваш результат."
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    
+    <LinearLayout
+        android:layout_below="@id/congratulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+
+        <TextView
+            android:id="@+id/correctAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Количество правильнвых ответов: 0"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#008000"
+            android:layout_gravity="center">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="80sp"
+            android:id="@+id/incorrectAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Количество неправильных ответов: 0"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#800000"
+            android:layout_gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retryquiz"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Попробовать свои силы ещё раз"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:background="@drawable/round_back_green"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+</RelativeLayout>
+
+    
+
+
